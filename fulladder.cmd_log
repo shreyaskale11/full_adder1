@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/ISE 14.7 PROJECT/ise 14.7/full_adder1/fulladder.xst" -ofn "D:/ISE 14.7 PROJECT/ise 14.7/full_adder1/fulladder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fulladder.ucf -p xc6slx9-tqg144-2 "fulladder.ngc" fulladder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fulladder_map.ncd fulladder.ngd fulladder.pcf 
+par -w -intstyle ise -ol high -mt off fulladder_map.ncd fulladder.ncd fulladder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fulladder.twx fulladder.ncd -o fulladder.twr fulladder.pcf -ucf fulladder.ucf 
+bitgen -intstyle ise -f fulladder.ut fulladder.ncd 
+xst -intstyle ise -ifn "D:/ISE 14.7 PROJECT/ise 14.7/full_adder1/fulladder.xst" -ofn "D:/ISE 14.7 PROJECT/ise 14.7/full_adder1/fulladder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fulladder.ucf -p xc6slx9-tqg144-2 "fulladder.ngc" fulladder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fulladder_map.ncd fulladder.ngd fulladder.pcf 
+par -w -intstyle ise -ol high -mt off fulladder_map.ncd fulladder.ncd fulladder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fulladder.twx fulladder.ncd -o fulladder.twr fulladder.pcf -ucf fulladder.ucf 
+bitgen -intstyle ise -f fulladder.ut fulladder.ncd 

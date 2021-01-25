@@ -1,0 +1,5 @@
+net "a" loc = "p22";
+net "b" loc = "p21";
+net "cin" loc = "p17";
+net "sum" loc = "p33";
+net "cout" loc = "p32";
